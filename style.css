@@ -41,3 +41,12 @@ body {
     border-radius: 8px;
     cursor: pointer;
 }
+h1,
+p,
+nav {
+    text-align: center;
+}
+
+nav {
+    margin-top: 20px;
+}
