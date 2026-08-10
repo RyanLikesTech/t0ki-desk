@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Desk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Video -->
+  <video autoplay loop muted playsinline id="bg-video">
+    <source src="https://raw.githubusercontent.com/RyanLikesTech/laughing-memory/main/hin.mp4" type="video/mp4">
+  </video>
+
+  <!-- Main Study Desk -->
+  <main class="study-container">
+
+    <!-- Timer -->
+    <section class="timer-box">
+      <h1>Study Timer</h1>
+
+      <div class="timer-display" id="timer">
+        25:00
+      </div>
+
+      <div class="buttons">
+        <button id="start-btn">Start</button>
+        <button id="pause-btn">Pause</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+    </section>
+
+    <!-- Spotify -->
+    <section class="music-widget">
+
+      <iframe
+        id="spotify-player"
+        style="border-radius:12px;"
+        src="https://open.spotify.com/embed/album/4Uf8BVznefnd2xZm2nRFUx?utm_source=generator"
+        width="100%"
+        height="152"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
+
+      <div class="music-input-box">
+        <input
+          type="text"
+          id="spotify-url"
+          placeholder="Paste Spotify link or embed code...">
+
+        <button id="load-music-btn">
+          Load
+        </button>
+      </div>
+
+      <p class="help-text">
+        Tip: Paste any Spotify link or embed code above!
+      </p>
+
+    </section>
+
+    <!-- Back to Hub -->
+    <nav class="study-nav">
+      <a href="index.html">🏠 Back to Toki Desk</a>
+    </nav>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
