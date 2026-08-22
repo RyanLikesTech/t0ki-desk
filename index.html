@@ -1,24 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
-    <title>Toki Desk</title> 
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-<h1>Welcome to Toki Desk</h1>
-<p>Your personal study space.</p>
-<section class="notepad">
-  <h2>📝 Notepad</h2>
-  <textarea placeholder="Write something here..."></textarea>
-  <button>Save Note</button>
-</section>
-<nav>
-  <a href="study.html">📚 Study Desk</a>
-  <a href="notes.html">📝 Full Notepad</a>
-</nav>
-</section>
-    <script src="script.js"></script>
-  </body>
-</html> 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Toki Desk</title>
+
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+  <main class="home-container">
+
+    <!-- Welcome -->
+    <section class="welcome-card">
+
+      <div class="logo">📚</div>
+
+      <h1>Welcome to Toki Desk</h1>
+
+      <p>Your personal study space.</p>
+
+      <p class="subtitle">
+        Focus. Learn. Get things done.
+      </p>
+
+    </section>
+
+
+    <!-- Main Options -->
+    <section class="home-options">
+
+      <!-- Notepad -->
+      <a href="notes.html" class="home-card">
+
+        <div class="card-icon">📝</div>
+
+        <div class="card-text">
+          <h2>Notepad</h2>
+
+          <p>
+            Write down your thoughts, notes and ideas.
+          </p>
+        </div>
+
+        <span class="arrow">→</span>
+
+      </a>
+
+
+      <!-- Study Desk -->
+      <a href="study.html" class="home-card">
+
+        <div class="card-icon">📚</div>
+
+        <div class="card-text">
+          <h2>Study Desk</h2>
+
+          <p>
+            Focus with a study timer and music.
+          </p>
+        </div>
+
+        <span class="arrow">→</span>
+
+      </a>
+
+    </section>
+
+
+    <footer>
+      Toki Desk • Your personal study space
+    </footer>
+
+  </main>
+
+</body>
+</html>
