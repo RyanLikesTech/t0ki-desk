@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notepad - Toki Desk</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="notes.css">
+</head>
+
+<body>
+
+  <main class="notes-container">
+
+    <!-- Top Header -->
+    <header class="notes-header">
+      <h1>📝 Quick Notes</h1>
+      <p>Draft ideas, make to-do lists, or keep track of study goals.</p>
+    </header>
+
+    <!-- Notepad Interface -->
+    <section class="notepad-card">
+      <div class="notepad-toolbar">
+        <button id="clear-btn" class="tool-btn danger">Clear</button>
+        <button id="save-btn" class="tool-btn primary">Save Note</button>
+      </div>
+
+      <textarea 
+        id="note-input" 
+        placeholder="Type your notes here... (They save automatically as you type!)"
+        spellcheck="true"
+      ></textarea>
+
+      <div class="notepad-footer">
+        <span id="save-status">Saved automatically</span>
+        <span id="char-count">0 characters</span>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="study-nav">
+      <a href="index.html">🏠 Back to Toki Desk</a>
+    </nav>
+
+  </main>
+
+  <script src="notes.js"></script>
+
+</body>
+</html>
